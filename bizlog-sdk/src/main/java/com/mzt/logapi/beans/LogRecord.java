@@ -39,6 +39,11 @@ public class LogRecord {
     private String subType;
 
     /**
+     * 日志的源数据id
+     */
+    private   Long sourceId;
+
+    /**
      * 日志绑定的业务标识
      */
     @NotBlank(message = "bizNo required")
@@ -50,6 +55,11 @@ public class LogRecord {
     @NotBlank(message = "operator required")
     @Length(max = 63, message = "operator max length 63")
     private String operator;
+
+    /**
+     *  创建人
+     */
+    private String createdBy;
 
     /**
      * 日志内容
@@ -64,7 +74,8 @@ public class LogRecord {
     /**
      * 日志的创建时间
      */
-    private Date createTime;
+    private Date created;
+
     /**
      * 日志的额外信息
      *

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>bizlog-sdk</artifactId>
-    <version>3.0.7-SNAPSHOT</version>
+    <version>3.0.9</version>
     <parent>
         <groupId>io.github.mouzt</groupId>
         <artifactId>mzt-biz-log</artifactId>
@@ -43,6 +43,13 @@
             <artifactId>hibernate-validator</artifactId>
             <version>6.1.5.Final</version>
         </dependency>
+        <!-- Fastjson 核心库 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83</version>
+        </dependency>
+
     </dependencies>
 
 </project>
